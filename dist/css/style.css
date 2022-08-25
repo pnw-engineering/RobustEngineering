@@ -208,11 +208,6 @@ body {
   overflow-x: hidden;
 }
 
-::-moz-selection {
-  background: #ffcd6e;
-  color: #fff;
-}
-
 ::selection {
   background: #ffcd6e;
   color: #fff;
@@ -230,12 +225,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-ol,
-ul {
-  list-style-type: none;
-  margin: 0px;
 }
 
 img {
@@ -478,4 +467,4 @@ textarea.form-control {
 
 #map_canvas {
   height: 500px;
-}/*# sourceMappingURL=style.css.map */
+}

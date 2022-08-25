@@ -1,12 +1,12 @@
-
+const track = document.querySelector('.carousel__track');
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
-  
+
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
-    
+
     // Animate links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
@@ -22,15 +22,15 @@ const navSlide = () => {
 
 navSlide();
 
-// function addEvents() {
-//   console.log("Trying to add events");
-//   const btns = document.querySelectorAll('.MapButton');
-//   console.log("found", btns.length);
-//   for( var i = 0; i < btns.length; i++) {
-//   // console.log(btns[i]);
-//   btns[i].addEventListener("click", toggleElement);
-//   }
-// }
+function addEvents() {
+  console.log("Trying to add events");
+  const btns = document.querySelectorAll('.MapButton');
+  console.log("found", btns.length);
+  for (var i = 0; i < btns.length; i++) {
+    console.log(btns[i]);
+    btns[i].addEventListener("click", toggleElement);
+  }
+}
 
 // addEvents();
 // toggleElement();
@@ -54,44 +54,47 @@ function toggleElement() {
   }
   sibsOff(i);
   //   console.log("siblings base =", i.substring(0,1))
-  sibsOff(i.substring(0,1));
-  
-  document.getElementById("h-roadmap").scrollIntoView({ block: "end", behavior: "smooth" });
-  
+  sibsOff(i.substring(0, 1));
+
+  document.getElementById("h-roadmap").scrollIntoView({
+    block: "end",
+    behavior: "smooth"
+  });
+
   function clearSubtree(el) {
     elSet = el.getElementsByClassName("MapLine");
     for (var i = 0; i < elSet.length; i++) {
       if (elSet[i].style.display == "block") {
-      console.log(elSet[i].id, " turned OFF - display was:", elSet[i].style.display);
-    elSet[i].style.display = "none";
-    btn = "b" + elSet[i].id;
-    // console.log("trying button ID", btn)
-    if (document.getElementById(btn).style.boxShadow != "none"){
-      document.getElementById(btn).style.boxShadow = "none";
-    }
-    }
-  //   bSet = el.getElementsByClassName("MapButton");
-  //   for (var i = 0; i < bSet.length; i++) {
-  //     if (bSet[i].style.boxShadow != "none") {
-  //       elSet[i].style.boxShadow = "none";
-  // 	  console.log("button", b, " turned OFF");
-  //     }
+        console.log(elSet[i].id, " turned OFF - display was:", elSet[i].style.display);
+        elSet[i].style.display = "none";
+        btn = "b" + elSet[i].id;
+        // console.log("trying button ID", btn)
+        if (document.getElementById(btn).style.boxShadow != "none") {
+          document.getElementById(btn).style.boxShadow = "none";
+        }
+      }
+      //   bSet = el.getElementsByClassName("MapButton");
+      //   for (var i = 0; i < bSet.length; i++) {
+      //     if (bSet[i].style.boxShadow != "none") {
+      //       elSet[i].style.boxShadow = "none";
+      // 	  console.log("button", b, " turned OFF");
+      //     }
     }
   }
-  
+
   function MapButtonOff(btn) {
     if (btn != undefined) {
       btn.style.boxShadow = "none";
       // console.log("button", btn.id, "turned  off");
     }
   }
-  
+
   function MapElementOff(el) {
     if (el != undefined) {
       el.style.display = "none";
       MapButtonOff(document.getElementById("b" + el.id));
       // console.log(base, "+", j, "=", id, "turned off ");
-  
+
       elSet = el.getElementsByClassName("MapLine");
       console.log(elSet.length, "elements found");
       for (var i = 0; i < elSet.length; i++) {
@@ -109,6 +112,7 @@ function toggleElement() {
       }
     }
   }
+
   function sibsOff(i) {
     base = Math.floor(parseInt(i, 10) / 10) * 10;
     me = parseInt(i.substring(i.length - 1, i.length), 10);
@@ -119,6 +123,4 @@ function toggleElement() {
       }
     }
   }
-
-}  
-
+}
