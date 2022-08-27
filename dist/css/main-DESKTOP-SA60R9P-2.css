@@ -177,10 +177,7 @@ h6 {
   border-font-weight: 700;
   border-color: rgb(180, 62, 12);
 }
-.site .center {
-  text-align: center;
-}
-.site .foot {
+.site .center .foot {
   grid-area: foot;
   width: 100%;
   display: grid;
@@ -984,7 +981,6 @@ article.card {
 
 .roadmap {
   width: 90%;
-  padding-top: 2em;
   text-align: center;
 }
 
