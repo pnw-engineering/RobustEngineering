@@ -1,4 +1,4 @@
-
+const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
@@ -42,6 +42,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 
 
 nextButton.addEventListener('click', e => {
+  console.log("next button hit");
   const currentSlide = track.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
 
@@ -55,6 +56,7 @@ nextButton.addEventListener('click', e => {
 })
 
 prevButton.addEventListener('click', e => {
+  console.log("prev button hit");
   const currentSlide = track.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
 
