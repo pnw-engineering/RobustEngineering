@@ -13,7 +13,6 @@
 
   .header {
     position: fixed;
-    position: sticky;
     grid-area: hdr;
     // top: 0;
     // height: 100%;
@@ -31,8 +30,6 @@
     overflow-y: hidden;
 
     &__bgr {
-      position: -webkit-sticky;
-      position: sticky;
       grid-area: bgr;
       width: 1rem;
       font-size: 30px;
@@ -63,8 +60,6 @@
   }
 
   .content {
-    position: -webkit-sticky;
-    position: sticky;
     // overflow-y: scroll;
     overflow-x: hidden;
     grid-area: content;
@@ -92,8 +87,6 @@
   .foot {
     grid-area: foot;
     position: fixed;
-    position: -webkit-sticky;
-    position: sticky;
     width: 100%;
     display: grid;
     grid-template:

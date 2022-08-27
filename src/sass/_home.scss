@@ -60,7 +60,6 @@
 
     .content {
         position: fixed;
-        // position: -webkit-sticky;
         overflow-y: scroll;
         overflow-x: hidden;
         grid-area: content;
@@ -75,7 +74,6 @@
         grid-area: foot;
         background-color: $primary-color;
         position: fixed;
-        // position: -webkit-sticky;
         width: 100%;
         display: grid;
         grid-template:
