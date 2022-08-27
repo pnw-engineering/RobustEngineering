@@ -126,6 +126,7 @@ h6 {
   display: grid;
   position: relative;
   grid-template: "hdr     hdr" 3.5em "content content" 1fr "foot  foot" 3em/0 1fr;
+  z-index: -1;
 }
 .site .header {
   position: fixed;
