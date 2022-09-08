@@ -1,0 +1,41 @@
+.sectionWrapper {
+  display: flex;
+  position: relative;
+}
+.sectionWrapper .logoImg {
+  top: 0px;
+  right: 300px;
+  width: 30em;
+  transform: rotate(30deg);
+  outline: 1px white;
+}
+
+.textBox {
+  font-size: x-large;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  width: 30rem;
+  color: var(--clr-text-light);
+}
+
+.logo {
+  font-family: "faster one";
+  font-size: 5em;
+  color: var(--clr-text-light);
+  width: 10em;
+  transform: rotate(-20deg);
+  margin-left: 5px;
+}
+
+.GoButton {
+  position: absolute;
+  bottom: 50px;
+  left: 15em;
+  Width: 14rem;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 50px;
+  color: var(--clr-text-light);
+  background: var(--clr-accent-500);
+  cursor: pointer;
+}

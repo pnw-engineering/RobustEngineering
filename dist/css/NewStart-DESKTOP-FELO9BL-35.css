@@ -1,0 +1,27 @@
+.sectionWrapper {
+  display: flex;
+  position: relative;
+}
+.sectionWrapper .logoImg {
+  position: fixed;
+  top: 0px;
+  right: 300px;
+  width: 30em;
+  transform: rotate(30deg);
+}
+
+.textBox {
+  font-size: x-large;
+  margin-left: 2rem;
+  width: 30rem;
+  color: var(--clr-text-light);
+}
+
+.logo {
+  font-family: "faster one";
+  font-size: 5em;
+  color: var(--clr-text-light);
+  width: 10em;
+  transform: rotate(-20deg);
+  margin-left: 2em;
+}

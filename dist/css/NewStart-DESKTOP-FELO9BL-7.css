@@ -1,0 +1,4 @@
+.textWrapper {
+  color: var(--clr-text-light);
+  outline: 1px solid white;
+}

@@ -1,0 +1,65 @@
+.sectionWrapper {
+  display: flex;
+  position: relative;
+}
+.sectionWrapper .logoImg {
+  position: fixed;
+  top: -70px;
+  left: 30px;
+  width: 22em;
+  transform: rotate(30deg);
+  opacity: 50%;
+}
+.sectionWrapper .textBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50rem;
+  color: var(--clr-text-light);
+}
+
+.textBox {
+  font-size: 2.5em;
+  margin-top: 5rem;
+  margin-left: 4rem;
+  width: 50rem;
+  color: var(--clr-text-light);
+}
+
+.logo {
+  position: absolute;
+  top: 35%;
+  right: 15rem;
+  font-family: "faster one";
+  font-size: 5em;
+  color: var(--clr-text-light);
+  width: 10em;
+  transform: rotate(-20deg);
+  margin-left: 5rem;
+}
+
+.GoButton {
+  position: absolute;
+  bottom: 50px;
+  left: 10em;
+  Width: 14rem;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 50px;
+  color: var(--clr-text-light);
+  background: var(--clr-accent-500);
+  cursor: pointer;
+}
+
+.bottomImg {
+  width: 25em;
+  position: absolute;
+  bottom: -30px;
+  right: 100px;
+  transform: rotate(20deg);
+  opacity: 50%;
+}
+
+.noScroll {
+  overflow-y: hidden;
+}

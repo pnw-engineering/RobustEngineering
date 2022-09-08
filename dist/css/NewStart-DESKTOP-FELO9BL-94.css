@@ -1,0 +1,78 @@
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 2em;
+}
+.sectionWrapper .logoImg {
+  width: 22em;
+  transform: rotate(30deg);
+  opacity: 50%;
+}
+.sectionWrapper .topBox {
+  margin: 0 auto;
+  width: 40px;
+  text-align: center;
+  font-size: 2em;
+  color: var(--clr-accent);
+  background: var(--clr-highlight-100);
+  border-radius: 5px;
+}
+
+.GoButton {
+  position: absolute;
+  bottom: 50px;
+  left: 10vw;
+  align-self: center;
+  width: 14rem;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 50px;
+  color: var(--clr-text-light);
+  background: var(--clr-accent-500);
+  cursor: pointer;
+}
+
+.bottomImg {
+  width: 25em;
+  position: absolute;
+  bottom: -30px;
+  right: 100px;
+  transform: rotate(20deg);
+  opacity: 50%;
+}
+
+.noScroll {
+  overflow-y: hidden;
+}
+
+.textGrid {
+  position: absolute;
+  top: 45%;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.textGrid .textBox {
+  font-size: 2em;
+  padding-top: 5rem;
+  margin-left: 2rem;
+  color: var(--clr-text-light);
+}
+
+.logo {
+  font-family: "faster one";
+  font-size: 5em;
+  color: var(--clr-text-light);
+  transform: rotate(-15deg);
+  margin-left: 5rem;
+}
+
+@media (max-width: 50rem) {
+  .logo {
+    font-size: 2.5em;
+  }
+  .textGrid {
+    flex-direction: column;
+  }
+}

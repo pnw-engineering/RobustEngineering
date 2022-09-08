@@ -1,0 +1,22 @@
+/* Error: Missing argument $channels.
+ *   ,--> src\sass\NewStart.scss
+ * 86|   box-shadow: 0, 0, 10 hsl();
+ *   |                        ^^^^^ invocation
+ *   '
+ *   ,
+ * 1 | @function hsl($channels) {
+ *   |           ============== declaration
+ *   '
+ *   src\sass\NewStart.scss 86:24  @use
+ *   src\sass\main.scss 4:1        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $channels.\a   \250c \2500 \2500 > src\\sass\\NewStart.scss\a 86\2502    box-shadow: 0, 0, 10 hsl();\d\a   \2502                         ^^^^^ invocation\a   \2575 \a   \2577 \a 1 \2502  @function hsl($channels) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   src\\sass\\NewStart.scss 86:24  @use\a   src\\sass\\main.scss 4:1        root stylesheet";
+}
