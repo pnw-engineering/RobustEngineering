@@ -1,18 +1,1 @@
-.sectionWrapper {
-  display: flex;
-}
-.sectionWrapper .textBox {
-  font-size: x-large;
-  margin-top: 10rem;
-  margin-left: 2rem;
-  width: 30rem;
-  color: var(--clr-text-light);
-}
-.sectionWrapper .logoImg {
-  width: 20em;
-  transform: rotate(30deg);
-}
-
-.logo {
-  font-family: faster-one;
-}
+.sectionWrapper{display:flex}.sectionWrapper .textBox{color:var(--clr-text-light);font-size:x-large;margin-left:2rem;margin-top:10rem;width:30rem}.sectionWrapper .logoImg{transform:rotate(30deg);width:20em}.logo{font-family:faster-one}

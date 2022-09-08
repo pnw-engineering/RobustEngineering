@@ -1,18 +1,1 @@
-/* Error: Expected identifier.
- *   ,
- * 9 |   background-image: image(src=".\img\derailing-toy-train-engine.svg"#);
- *   |                                                                      ^
- *   '
- *   src\sass\NewStart.scss 9:70  @use
- *   src\sass\main.scss 4:1       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Expected identifier.\a   \2577 \a 9 \2502    background-image: image(src=".\\img\\derailing-toy-train-engine.svg"#);\d\a   \2502                                                                       ^\a   \2575 \a   src\\sass\\NewStart.scss 9:70  @use\a   src\\sass\\main.scss 4:1       root stylesheet';
-}
+body:before{border-bottom:2px solid #000;content:'Error: Expected identifier.\a   \2577 \a 9 \2502    background-image: image(src=".\\img\\derailing-toy-train-engine.svg"#);\d\a   \2502                                                                       ^\a   \2575 \a   src\\sass\\NewStart.scss 9:70  @use\a   src\\sass\\main.scss 4:1       root stylesheet';display:block;font-family:Source Code Pro,SF Mono,Monaco,Inconsolata,Fira Mono,Droid Sans Mono,monospace,monospace;margin-bottom:1em;padding:1em;white-space:pre}

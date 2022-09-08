@@ -1,14 +1,1 @@
-.textWrapper {
-  display: flex;
-  margin-top: 10rem;
-  margin-left: 2rem;
-  width: 30rem;
-  color: var(--clr-text-light);
-  outline: 1px solid white;
-}
-
-.logoImg {
-  display: flex;
-  width: 20em;
-  transform: rotate(30deg);
-}
+.textWrapper{color:var(--clr-text-light);display:flex;margin-left:2rem;margin-top:10rem;outline:1px solid #fff;width:30rem}.logoImg{display:flex;transform:rotate(30deg);width:20em}

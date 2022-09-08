@@ -1,18 +1,1 @@
-/* Error: Expected digit.
- *    ,
- * 11 |   .logoImg {
- *    |    ^
- *    '
- *   src\sass\NewStart.scss 11:4  @use
- *   src\sass\main.scss 4:1       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected digit.\a    \2577 \a 11 \2502    .logoImg {\d\a    \2502     ^\a    \2575 \a   src\\sass\\NewStart.scss 11:4  @use\a   src\\sass\\main.scss 4:1       root stylesheet";
-}
+body:before{border-bottom:2px solid #000;content:"Error: Expected digit.\a    \2577 \a 11 \2502    .logoImg {\d\a    \2502     ^\a    \2575 \a   src\\sass\\NewStart.scss 11:4  @use\a   src\\sass\\main.scss 4:1       root stylesheet";display:block;font-family:Source Code Pro,SF Mono,Monaco,Inconsolata,Fira Mono,Droid Sans Mono,monospace,monospace;margin-bottom:1em;padding:1em;white-space:pre}
