@@ -12,13 +12,19 @@ body{
 
   .topBox {
     margin-left: 1em;
+    padding-block: 1em;
     width: min(40rem, 85%);
     text-align: center;
     font-size: 2em;
     // color: var(--clr-text-light);
-    color: var(--clr-accent);
-    background: var(--clr-text-light);
+    color: var(--clr-primary-100);
+    background: var( --clr-secondary-200);
+    opacity: 90%;
+    border: 5px ridge var(--clr-accent-400);
     border-radius: 10px;
+    transform: rotate(10deg) translatex(20px) translatey(80px);
+    // transform: translatex(20px);
+    filter: drop-shadow(0 0 20px var(--clr-accent-300));
   }
 }
 .logoImg {

@@ -57,8 +57,9 @@ h6 {
   --clr-primary-400: hsla(212, 50%, 50%);
   --clr-primary-600: hsl(212, 50%, 25%);
   --clr-primary-700: hsl(212, 50%, 15%);
-  --clr-primary-900: hwb(180 5% 95%);
+  --clr-primary-900: hsl(0, 0%, 5%);
   --clr-secondary: hsl(212, 15%, 50%);
+  --clr-secondary-200: hsl(212, 15%,25%);
   --clr-text-light: hsl(60, 31%, 95%);
   --clr-text-normal: hsl(60, 30%, 90%);
   --clr-text-medium: hsl(60, 30%, 80%);

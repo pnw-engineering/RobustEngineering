@@ -57,8 +57,9 @@ h6 {
   --clr-primary-400: hsla(212, 50%, 50%);
   --clr-primary-600: hsl(212, 50%, 25%);
   --clr-primary-700: hsl(212, 50%, 15%);
-  --clr-primary-900: hwb(180 5% 95%);
+  --clr-primary-900: hsl(0, 0%, 5%);
   --clr-secondary: hsl(212, 15%, 50%);
+  --clr-secondary-200: hsl(212, 15%,25%);
   --clr-text-light: hsl(60, 31%, 95%);
   --clr-text-normal: hsl(60, 30%, 90%);
   --clr-text-medium: hsl(60, 30%, 80%);
@@ -134,12 +135,17 @@ body {
 }
 .sectionWrapper .topBox {
   margin-left: 1em;
+  padding-block: 1em;
   width: min(40rem, 85%);
   text-align: center;
   font-size: 2em;
-  color: var(--clr-accent);
-  background: var(--clr-text-light);
+  color: var(--clr-primary-100);
+  background: var(--clr-secondary-200);
+  opacity: 90%;
+  border: 5px ridge var(--clr-accent-400);
   border-radius: 10px;
+  transform: rotate(10deg) translatex(20px) translatey(80px);
+  filter: drop-shadow(0 0 20px var(--clr-accent-300));
 }
 
 .logoImg {
