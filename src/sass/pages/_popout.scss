@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.expandable {
+  /*   display: block; */
+  position: static;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 20rem;
+  height: 2.5em;
+  text-align: center;
+  /*   overflow: hidden; */
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  /*   border: 1px dotted yellow; */
+  // transition: position 500ms linear;
+}
+
+.hiddenText {
+  opacity: 0;
+  /*   height: 0; */
+  /*   width: auto; */
+  // position: absolute;
+  // top: 25vh;
+  // left: 0px;
+  // right: 0px;
+  /*       color: yellow; */
+  /*   transform: translate(-500px, -100px); */
+  transition: all 200ms linear;
+}

@@ -134,7 +134,7 @@
   counter-increment: item;
 }
 .carousel__slide .heading {
-  color: var(--clr-text-light);
+  color: var(--clr-text-medium);
   font-size: 1.4em;
   font-weight: 900;
   font-variant: small-caps;
@@ -165,6 +165,7 @@
 .carousel__slide .text ul .circles li {
   font-size: 1em;
   padding-bottom: 5px;
+  color: white;
 }
 .carousel__slide .text img {
   max-width: 100%;
@@ -174,6 +175,7 @@
 }
 .carousel__slide .text img .fill {
   object-fit: scale-down;
+  background: white;
 }
 
 .carousel__slide:before {
@@ -221,4 +223,14 @@ p:hover {
   height: 2rem;
   background: rgba(0, 0, 0, 0.3);
   margin: 0 12px;
+}
+
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.indent {
+  list-style: none;
+  color: var(--clr-text-light);
 }

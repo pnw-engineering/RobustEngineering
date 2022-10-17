@@ -1386,7 +1386,7 @@ article.card {
   counter-increment: item;
 }
 .carousel__slide .heading {
-  color: var(--clr-text-medium);
+  color: var(--clr-text-light);
   font-size: 1.4em;
   font-weight: 900;
   font-variant: small-caps;
@@ -1417,7 +1417,6 @@ article.card {
 .carousel__slide .text ul .circles li {
   font-size: 1em;
   padding-bottom: 5px;
-  color: white;
 }
 .carousel__slide .text img {
   max-width: 100%;
@@ -1427,7 +1426,6 @@ article.card {
 }
 .carousel__slide .text img .fill {
   object-fit: scale-down;
-  background: white;
 }
 
 .carousel__slide:before {
@@ -1477,16 +1475,6 @@ p:hover {
   margin: 0 12px;
 }
 
-.centered {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.indent {
-  list-style: none;
-  color: var(--clr-text-light);
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -1505,6 +1493,7 @@ p:hover {
   padding: 10px;
   cursor: pointer;
   /*   border: 1px dotted yellow; */
+  transition: position 500ms linear;
 }
 
 .hiddenText {
@@ -1513,5 +1502,5 @@ p:hover {
   /*   width: auto; */
   /*       color: yellow; */
   /*   transform: translate(-500px, -100px); */
-  transition: all 200ms linear;
+  transition: all 1000ms linear;
 }
