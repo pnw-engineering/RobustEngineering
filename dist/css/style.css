@@ -3,4 +3,468 @@
 
 PROJECT:	Project Name
 VERSION:	Versoin Number
--------------------------------------------------------------------*/@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");@font-face{font-family:futura-bold;font-style:normal;font-weight:400;src:url(../fonts/Futura-Bold.woff) format("woff")}body{-webkit-font-smoothing:antialiased;line-height:1.2}.paragraph,body,p{color:#5c5c77;font-family:Poppins,sans-serif;font-size:15px}.paragraph,p{font-weight:400;line-height:1.9}h1,h2,h3,h4,h5,h6{color:#1e1e4b;font-family:futura-bold;font-weight:700;line-height:1.2}.h1,h1{font-size:60px}@media (max-width:575px){.h1,h1{font-size:45px}}.h2,h2{font-size:40px}@media (max-width:575px){.h2,h2{font-size:30px}}.h3,h3{font-size:25px}@media (max-width:575px){.h3,h3{font-size:20px}}.h4,h4{font-size:20px}@media (max-width:575px){.h4,h4{font-size:18px}}.h5,h5{font-size:18px}@media (max-width:575px){.h5,h5{font-size:16px}}.h6,h6{font-size:16px}@media (max-width:575px){.h6,h6{font-size:14px}}.btn{border:0;border-radius:0;font-family:Poppins,sans-serif;font-size:16px;font-weight:500;overflow:hidden;padding:15px 40px;position:relative;text-transform:capitalize;transition:.2s ease;z-index:1}.btn:before{bottom:10%;content:"";height:80%;left:0;position:absolute;transform:scaleY(0);transform-origin:top;transition:transform .2s ease-in-out;width:100%;z-index:-1}.btn:focus{box-shadow:none!important;outline:0}.btn:active{box-shadow:none}.btn:hover:before{transform:scaleY(1);transform-origin:bottom}.btn-sm{font-size:14px;padding:10px 35px}.btn-xs{font-size:12px;padding:5px 15px}.btn-primary{background:#ffbc3b;color:#fff}.btn-primary:before{background:#fff}.btn-primary:active{background:#ffbc3b!important;color:#ffbc3b}.btn-primary:active:before{height:80%}.btn-primary:hover{background:#ffab08;color:#ffbc3b}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{background-color:#ffab08;border-color:#ffab08;color:#fff}.btn-secondary{background:#fff;border:1px solid #fff;color:#ffbc3b}.btn-secondary:before{background:#ffbc3b}.btn-secondary:active{background:#ffbc3b;border:1px solid #fff;color:#fff}.btn-secondary:hover{background:#fff;border:1px solid #fff;color:#fff}.btn-primary-outline{background:transparent;border:1px solid #ffbc3b;color:#ffbc3b}.btn-primary-outline:before{background:#fff}.btn-primary-outline:hover{background:#ffbc3b;color:#ffbc3b}.btn-primary-outline:active{background:#ffbc3b;color:#fff}body{background-color:#fff;overflow-x:hidden}::-moz-selection{background:#ffcd6e;color:#fff}::selection{background:#ffcd6e;color:#fff}.preloader{align-items:center;background-color:#ffdc11;bottom:0;display:flex;justify-content:center;left:0;position:fixed;right:0;top:0;z-index:999999}img{border:0;vertical-align:middle}a,a:focus,a:hover{text-decoration:none}a,button,select{cursor:pointer;transition:.2s ease}a:focus,button:focus,select:focus{outline:0}a:hover{color:#ffbc3b}a.text-light:hover,a.text-primary:hover{color:#ffbc3b!important}h4{transition:.2s ease}a h4:hover{color:#ffbc3b}.slick-slide{outline:0}.section{padding-bottom:90px;padding-top:90px}.section-sm{padding-bottom:40px;padding-top:40px}.section-title{margin-bottom:30px}.bg-cover{background-position:50%;background-repeat:no-repeat;background-size:cover}.border-primary{border-color:#ededf1!important}.overlay{position:relative}.overlay:before{background:#1a1a37;content:"";height:100%;left:0;opacity:.8;position:absolute;top:0;width:100%}.outline-0{outline:0!important}.d-unset{display:unset!important}.bg-primary{background:#ffbc3b!important}.bg-secondary{background:#1a1a37!important}.bg-gray{background:#f8f8f8}.text-primary{color:#ffbc3b!important}.text-color{color:#5c5c77}.text-light{color:#8585a4!important}.text-lighten{color:#d6d6e0!important}.text-muted{color:#b5b5b7!important}.text-dark{color:#1e1e4b!important}.font-secondary{font-family:futura-bold}.mb-10{margin-bottom:10px!important}.mb-20{margin-bottom:20px!important}.mb-30{margin-bottom:30px!important}.mb-40{margin-bottom:40px!important}.mb-50{margin-bottom:50px!important}.mb-60{margin-bottom:60px!important}.mb-70{margin-bottom:70px!important}.mb-80{margin-bottom:80px!important}.mb-90{margin-bottom:90px!important}.mb-100{margin-bottom:100px!important}.pl-150{padding-left:150px}.zindex-1{z-index:1}@media (max-width:991px){.overflow-md-hidden{overflow:hidden}}.vertical-align-middle{vertical-align:middle}.icon-md{font-size:36px}.page-title-section{padding:200px 0 80px}.custom-breadcrumb li.nasted{padding-left:25px;position:relative}.custom-breadcrumb li.nasted:before{color:#fff;content:"\e649";font-family:themify;font-size:20px;left:-5px;position:absolute;top:50%;transform:translateY(-50%)}.list-styled{padding-left:25px}.list-styled li{margin-bottom:15px;position:relative}.list-styled li:before{background:#ffbc3b;border-radius:50%;content:"";height:10px;left:-25px;position:absolute;top:5px;width:10px}textarea.form-control{height:200px;padding:20px}#map_canvas{height:500px}
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+/*  typography */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@font-face {
+  font-family: "futura-bold";
+  src: url("../fonts/Futura-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: #5c5c77;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: #5c5c77;
+  font-size: 15px;
+  line-height: 1.9;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1e1e4b;
+  font-family: "futura-bold";
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 60px;
+}
+@media (max-width: 575px) {
+  h1, .h1 {
+    font-size: 45px;
+  }
+}
+
+h2, .h2 {
+  font-size: 40px;
+}
+@media (max-width: 575px) {
+  h2, .h2 {
+    font-size: 30px;
+  }
+}
+
+h3, .h3 {
+  font-size: 25px;
+}
+@media (max-width: 575px) {
+  h3, .h3 {
+    font-size: 20px;
+  }
+}
+
+h4, .h4 {
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  h4, .h4 {
+    font-size: 18px;
+  }
+}
+
+h5, .h5 {
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  h5, .h5 {
+    font-size: 16px;
+  }
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+@media (max-width: 575px) {
+  h6, .h6 {
+    font-size: 14px;
+  }
+}
+
+/* Button style */
+.btn {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  padding: 15px 40px;
+  border-radius: 0;
+  font-weight: 500;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+  overflow: hidden;
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: -1;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+.btn:active {
+  box-shadow: none;
+}
+.btn:hover::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 10px 35px;
+}
+
+.btn-xs {
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+.btn-primary {
+  background: #ffbc3b;
+  color: #fff;
+}
+.btn-primary::before {
+  background: #fff;
+}
+.btn-primary:active {
+  background: #ffbc3b !important;
+  color: #ffbc3b;
+}
+.btn-primary:active::before {
+  height: 80%;
+}
+.btn-primary:hover {
+  background: #ffab08;
+  color: #ffbc3b;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ffab08;
+  border-color: #ffab08;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #ffbc3b;
+  border: 1px solid #fff;
+}
+.btn-secondary::before {
+  background: #ffbc3b;
+}
+.btn-secondary:active {
+  background: #ffbc3b;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-secondary:hover {
+  background: #fff;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-primary-outline {
+  border: 1px solid #ffbc3b;
+  color: #ffbc3b;
+  background: transparent;
+}
+.btn-primary-outline::before {
+  background: #fff;
+}
+.btn-primary-outline:hover {
+  background: #ffbc3b;
+  color: #ffbc3b;
+}
+.btn-primary-outline:active {
+  background: #ffbc3b;
+  color: #fff;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #ffcd6e;
+  color: #fff;
+}
+
+/* preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFDC11;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+a:focus,
+button:focus,
+select:focus {
+  outline: 0;
+}
+
+a:hover {
+  color: #ffbc3b;
+}
+
+a.text-primary:hover {
+  color: #ffbc3b !important;
+}
+
+a.text-light:hover {
+  color: #ffbc3b !important;
+}
+
+h4 {
+  transition: 0.2s ease;
+}
+
+a h4:hover {
+  color: #ffbc3b;
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.section-sm {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section-title {
+  margin-bottom: 30px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-primary {
+  border-color: #ededf1 !important;
+}
+
+/* overlay */
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #1a1a37;
+  opacity: 0.8;
+}
+
+.outline-0 {
+  outline: 0 !important;
+}
+
+.d-unset {
+  display: unset !important;
+}
+
+.bg-primary {
+  background: #ffbc3b !important;
+}
+
+.bg-secondary {
+  background: #1a1a37 !important;
+}
+
+.bg-gray {
+  background: #f8f8f8;
+}
+
+.text-primary {
+  color: #ffbc3b !important;
+}
+
+.text-color {
+  color: #5c5c77;
+}
+
+.text-light {
+  color: #8585a4 !important;
+}
+
+.text-lighten {
+  color: #d6d6e0 !important;
+}
+
+.text-muted {
+  color: #b5b5b7 !important;
+}
+
+.text-dark {
+  color: #1e1e4b !important;
+}
+
+.font-secondary {
+  font-family: "futura-bold";
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.mb-90 {
+  margin-bottom: 90px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.pl-150 {
+  padding-left: 150px;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .overflow-md-hidden {
+    overflow: hidden;
+  }
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.icon-md {
+  font-size: 36px;
+}
+
+/* page title */
+.page-title-section {
+  padding: 200px 0 80px;
+}
+
+.custom-breadcrumb li.nasted {
+  position: relative;
+  padding-left: 25px;
+}
+.custom-breadcrumb li.nasted::before {
+  position: absolute;
+  font-family: "themify";
+  content: "\e649";
+  font-size: 20px;
+  top: 50%;
+  left: -5px;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+/* /page title */
+.list-styled {
+  padding-left: 25px;
+}
+.list-styled li {
+  position: relative;
+  margin-bottom: 15px;
+}
+.list-styled li::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ffbc3b;
+  left: -25px;
+  top: 5px;
+}
+
+textarea.form-control {
+  height: 200px;
+  padding: 20px;
+}
+
+#map_canvas {
+  height: 500px;
+}

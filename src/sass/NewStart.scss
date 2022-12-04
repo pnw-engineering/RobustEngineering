@@ -13,22 +13,23 @@ body{
   .topBox {
     margin-left: 1em;
     padding-block: 1em;
-    width: min(40rem, 85%);
+    width: min(40rem, 90%);
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
     // color: var(--clr-text-light);
     color: var(--clr-primary-100);
     background: var( --clr-secondary-200);
     opacity: 90%;
     border: 5px ridge var(--clr-accent-400);
     border-radius: 10px;
-    transform: rotate(10deg) translatex(20px) translatey(80px);
+    transform: rotate(10deg) translatex(20px) translatey(25px);
     // transform: translatex(20px);
     filter: drop-shadow(0 0 20px var(--clr-accent-300));
   }
 }
 .logoImg {
-  height: max(20rem, 20vh);
+  height: max(20rem, 20vw);
+  max-width: 100%;
   position: absolute;
   top: 100px;
   left: 50%;
@@ -89,6 +90,7 @@ body{
   font-family: "faster one";
   font-size: 5em;
   line-height: 1;
+  border: 8px double hsl(0, 100%, 30%);
   border-radius: 10px;
   // color: var(--clr-accent-500);
   color: hsl(0, 100%, 29%);
@@ -116,7 +118,7 @@ body{
     // flex-direction: row;
 
     .topBox{
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
   }
 }
